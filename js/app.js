@@ -13,7 +13,7 @@ const images = [
     "image/fancy-carousel (12).jpg",
 ]
 let imgIndex = 0;
-let imgContainer = document.getElementById('img-container');
+let imgContainer = document.getElementById('img-container'); 
 setInterval(()=>{
     if(imgIndex >= images.length){
         imgIndex = 0;
@@ -21,5 +21,4 @@ setInterval(()=>{
     const imgUrl = images[imgIndex];
     imgContainer.setAttribute('src', imgUrl);
     imgIndex++;
-    console.log(imgUrl);
-},1000)
+},1000);
